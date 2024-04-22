@@ -12,25 +12,35 @@
 </head>
 
 <body class="font-[Inter] bg-gradient-to-b from-[#200016] to-[#10001f] h-[100vh]">
-    <header class="flex justify-between items-center m-7">
+    <header class="flex justify-between items-center m-8 fixed w-[95%] z-10">
         <h2><a class="text-white text-3xl uppercase" href="#" class="logo">Parallax</a></h2>
         <ul class="flex justify-center">
-            <li class="mr-7"><a
+            <li class="mr-8"><a
                     class="text-xl py-1.5 px-4 bg-white hover:bg-white text-[#200016] hover:text-[#200016] rounded-2xl"
                     href="#">Home</a></li>
-            <li class="mr-7"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
+            <li class="mr-8"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
                     href="#">Product</a></li>
-            <li class="mr-7"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
+            <li class="mr-8"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
                     href="#">Shop</a></li>
-            <li class="mr-7"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
+            <li class="mr-8"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
                     href="#">About</a></li>
-            <li class="mr-7"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
+            <li class="mr-8"><a class="text-white text-xl py-1.5 px-4 hover:bg-white hover:text-[#200016] rounded-2xl"
                     href="#">Contact</a></li>
         </ul>
     </header>
-    <main>
-        <!-- start footer -->
-        <!-- <footer
+    <section class="relative h-screen w-full flex justify-center items-center">
+        <img class="absolute h-screen w-full object-cover" src="imges/stars1.webp" id="stars" alt="">
+        <h2 class="text-white text-2xl uppercase translate-y-[-140px]">parallax</h2>
+        <img class="absolute h-screen w-full object-cover mix-blend-screen translate-y-[80px]" src="imges/moon2.webp"
+            id="moon" alt="">
+        <img class="absolute h-screen w-full object-cover" src="imges/mountains3.webp" id="mountain3" alt="">
+        <img class="absolute h-screen w-full object-cover" src="imges/mountains4.webp" id="mountain4" alt="">
+        <img class="absolute h-screen w-full object-cover" src="imges/river5.webp" id="river" alt="">
+        <img class="absolute h-screen w-full object-cover" src="imges/boat6.webp" id="boat" alt="">
+        <img class="absolute h-screen w-full object-cover" src="imges/mountains7.webp" id="mountains7" alt="">
+    </section>
+    <!-- start footer -->
+    <!-- <footer
             class="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
             <span class="flex text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href=""
                     class="hover:underline">MAIREC</a>. Edelmetallgesellschaft mbH |
@@ -65,8 +75,7 @@
                 </li>
             </ul>
         </footer> -->
-        <!-- end footer -->
-    </main>
+    <!-- end footer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 
