@@ -12,7 +12,7 @@
 </head>
 
 <body class="font-[Inter] bg-gradient-to-b from-[#200016] to-[#10001f] h-[100vh]">
-    <header class="flex justify-between items-center m-8 fixed w-[95%] z-10">
+    <header class="flex justify-between items-center m-8 fixed w-[95%] z-[100]">
         <h2><a class="text-white text-3xl uppercase" href="#" class="logo">Parallax</a></h2>
         <ul class="flex justify-center">
             <li class="mr-8"><a
@@ -28,7 +28,8 @@
                     href="#">Contact</a></li>
         </ul>
     </header>
-    <section class="relative h-screen w-full flex justify-center items-center">
+    <section
+        class="relative h-screen w-full flex justify-center items-center after:content-['*']  after:absolute after:bottom-0 after:h-[100px] after:w-[100%] after:bg-gradient-to-p after:from-[#200016] after:to-[transparent]">
         <img class="absolute h-screen w-full object-cover" src="imges/stars1.webp" id="stars" alt="">
         <h2 class="text-white text-2xl uppercase translate-y-[-140px]">parallax</h2>
         <img class="absolute h-screen w-full object-cover mix-blend-screen translate-y-[80px]" src="imges/moon2.webp"
@@ -39,27 +40,41 @@
         <img class="absolute h-screen w-full object-cover" src="imges/boat6.webp" id="boat" alt="">
         <img class="absolute h-screen w-full object-cover" src="imges/mountains7.webp" id="mountains7" alt="">
     </section>
+    <div class="text-white p-8 text-2xl">
+        <h2 class="text-3xl m-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio?</h2>
+        <p class="m-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reprehenderit iure eius tempore
+            incidunt veniam
+            quae. Odit aliquam officia nihil optio, dolor eius molestiae. Labore saepe nam reiciendis, voluptate ut
+            facere explicabo tenetur deserunt a eaque doloribus similique qui eos earum consequatur aliquam neque dolore
+            quae exercitationem molestiae ex cupiditate tempora! Porro iste, fugiat nobis neque nam ab alias dignissimos
+            totam consequuntur at soluta iusto consectetur maiores. Voluptatum voluptatem nihil sequi exercitationem
+            illo quia quo quam expedita quidem, consectetur incidunt distinctio dignissimos officia veritatis quisquam
+            fugit praesentium adipisci unde rerum ducimus sed atque corporis consequuntur. Corporis aliquam fugiat
+            magnam earum?</p><br>
+        <p class="m-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reprehenderit iure eius tempore
+            incidunt veniam
+            quae. Odit aliquam officia nihil optio, dolor eius molestiae. Labore saepe nam reiciendis, voluptate ut
+            facere explicabo tenetur deserunt a eaque doloribus similique qui eos earum consequatur aliquam neque dolore
+            quae exercitationem molestiae ex cupiditate tempora! Porro iste, fugiat nobis neque nam ab alias dignissimos
+            totam consequuntur at soluta iusto consectetur maiores. Voluptatum voluptatem nihil sequi exercitationem
+            illo quia quo quam expedita quidem, consectetur incidunt distinctio dignissimos officia veritatis quisquam
+            fugit praesentium adipisci unde rerum ducimus sed atque corporis consequuntur. Corporis aliquam fugiat
+            magnam earum?</p><br>
+        <p class="m-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reprehenderit iure eius tempore
+            incidunt veniam
+            quae. Odit aliquam officia nihil optio, dolor eius molestiae. Labore saepe nam reiciendis, voluptate ut
+            facere explicabo tenetur deserunt a eaque doloribus similique qui eos earum consequatur aliquam neque dolore
+            quae exercitationem molestiae ex cupiditate tempora! Porro iste, fugiat nobis neque nam ab alias dignissimos
+            totam consequuntur at soluta iusto consectetur maiores. Voluptatum voluptatem nihil sequi exercitationem
+            illo quia quo quam expedita quidem, consectetur incidunt distinctio dignissimos officia veritatis quisquam
+            fugit praesentium adipisci unde rerum ducimus sed atque corporis consequuntur. Corporis aliquam fugiat
+            magnam earum?</p><br>
+    </div>
     <!-- start footer -->
-    <!-- <footer
-            class="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-            <span class="flex text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href=""
-                    class="hover:underline">MAIREC</a>. Edelmetallgesellschaft mbH |
-                <ul
-                    class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Contact</a>
-                    </li>
-                </ul>
-            </span>
+    <footer
+        class="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        <span class="flex text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href=""
+                class="hover:underline">MAIREC</a>. Edelmetallgesellschaft mbH |
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">About</a>
@@ -74,7 +89,22 @@
                     <a href="#" class="hover:underline">Contact</a>
                 </li>
             </ul>
-        </footer> -->
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </footer>
     <!-- end footer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
