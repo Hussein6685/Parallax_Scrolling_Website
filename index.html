@@ -29,9 +29,9 @@
         </ul>
     </header>
     <section
-        class="relative h-screen w-full flex justify-center items-center after:content-['*']  after:absolute after:bottom-0 after:h-[100px] after:w-[100%] after:bg-gradient-to-p after:from-[#200016] after:to-[transparent]">
+        class=" main relative h-screen w-full flex justify-center items-center after:content-['*']  after:absolute after:bottom-0 after:h-[100px] after:w-[100%] after:bg-gradient-to-p after:from-[#200016] after:to-[transparent] overflow-hidden">
         <img class="absolute h-screen w-full object-cover" src="imges/stars1.webp" id="stars" alt="">
-        <h2 class="text-white text-2xl uppercase translate-y-[-140px]">parallax</h2>
+        <h2 class="parallax text-white text-2xl uppercase translate-y-[-140px]">parallax</h2>
         <img class="absolute h-screen w-full object-cover mix-blend-screen translate-y-[80px]" src="imges/moon2.webp"
             id="moon" alt="">
         <img class="absolute h-screen w-full object-cover" src="imges/mountains3.webp" id="mountain3" alt="">
@@ -107,6 +107,41 @@
     </footer>
     <!-- end footer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script>
+        let start = document.getElementById('start')
+        let moon = document.getElementById('moon')
+        let mountain3 = document.getElementById('mountain3')
+        let mountain4 = document.getElementById('mountain4')
+        let river = document.getElementById('river')
+        let boat6 = document.getElementById('boat6')
+        let parallax = document.querySelector('.parallax')
+        window.onscroll = function () {
+            let value = scrollY;
+            stars.style.left = value + 'px'
+            moon.style.top = value * 4 + 'px'
+            mountain3.style.top = value * 2 + 'px'
+            mountain4.style.top = value * 1.5 + 'px'
+            river.style.top = value + 'px'
+            boat.style.top = value + 'px'
+            boat.style.left = value * 3 + 'px'
+            parallax.style.fontSize = value + 'px'
+            if (scrollY >= 67) {
+                parallax.style.fontSize = 67 + 'px'
+                parallax.style.position = 'fixed'
+                if (scrollY >= 440) {
+                    parallax.style.display = 'none'
+                } else {
+                    parallax.style.display = 'block'
+                }
+                if (scrollY >= 127) {
+                    document.querySelector('.main').style.background = 'linear-gradient(#376281, #10001f)'
+                } else {
+                    document.querySelector('.main').style.background = 'linear-gradient(#200016, #10001f)'
+
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
